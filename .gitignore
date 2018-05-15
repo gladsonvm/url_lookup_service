@@ -100,5 +100,13 @@ venv.bak/
 # mkdocs documentation
 /site
 
+#Pycharm
+.idea/
+.xml
+
 # mypy
 .mypy_cache/
+
+#Pycharm
+/idea/*
+.xml
