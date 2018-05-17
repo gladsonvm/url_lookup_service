@@ -13,7 +13,7 @@ def extract_data(request):
         'hostname': hostname,
         'port': port,
         'original_path': '/'.join(request.uri.split('/')[2:]),
-        'safe': check_url(hostname)
+        'safe': check_url(request.uri)
     }
 
 
