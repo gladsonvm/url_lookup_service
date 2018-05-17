@@ -6,6 +6,7 @@ A URL scanner which responds to get requests to check a given url is vulnerable 
     - git clone https://github.com/gladsonvm/url_lookup_service.git
  - Create a Virtual environment
     - mkvirtualenv <env_name>
+    - for more on virtualenv please check https://virtualenvwrapper.readthedocs.io/en/latest/
  - Activate virual env
    - workon <env_name>
  - Install all requirements with `pip install requirements.txt`
