@@ -1,7 +1,24 @@
+import random
 import sqlite3
+
 
 db = sqlite3.connect("urls.db")
 cursor = db.cursor()
+
+
+def scan_url(url):
+    """
+    if a given url is not in database check if it is vulnerable or
+    not with info from some api calls or a public vulnerability database.
+    As of now this method will randomly return True/False just to mock behavious
+    :param url: url
+    :return: True if not vulnerable else false
+    """
+    is_safe = random.choice([True, False])
+    if is_safe:
+        return True
+    cursor.execute('insert into url (url) values (?)', (url,))
+    return is_safe
 
 
 def check_url(uri):
@@ -21,4 +38,9 @@ def check_url(uri):
         for result in results:
             if uri == result or hostname == result[0].split('/')[0] or uri == original_url:
                 safe = False
+    else:
+        safe = scan_url(original_url)
     return safe
+
+
+

@@ -27,8 +27,11 @@ A URL scanner which responds to get requests to check a given url is vulnerable 
         "meta": {"timestamp": "2018-05-15 12:45:29.748930", 
         "resource_uri": "/1/hostname:port/origina/path&qs=1"}, 
         "hostname": "hostname", 
-        "port": "8000"
+        "port": "8000",
+        "safe": true
         }
 ##### how it works
   All required data is extracted from url and url to be scanned will be constructed from same. After that 
 url to be scanned will be checked for vulnerability and results are returned as a json.
+
+

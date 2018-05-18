@@ -1,4 +1,4 @@
-from db_ops import check_url
+from url_scanner import check_url
 
 
 def extract_data(request):
@@ -15,5 +15,6 @@ def extract_data(request):
         'original_path': '/'.join(request.uri.split('/')[2:]),
         'safe': check_url(request.uri)
     }
+
 
 
