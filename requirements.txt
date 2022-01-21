@@ -10,7 +10,7 @@ hyperlink==18.0.0
 idna==2.6
 incremental==17.5.0
 ipdb==0.11
-ipython==5.7.0
+ipython==7.16.3
 ipython-genutils==0.2.0
 pathlib2==2.3.2
 pexpect==4.5.0
