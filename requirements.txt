@@ -25,7 +25,7 @@ simplegeneric==0.8.1
 six==1.11.0
 traitlets==4.3.2
 sqlite3
-Twisted==18.4.0
+Twisted==22.2.0
 urllib3==1.22
 wcwidth==0.1.7
 zope.interface==4.5.0
